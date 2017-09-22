@@ -1,3 +1,13 @@
+test/bm_*
+test/st_*
+test/tkfc_*
+test/tr_*
+tools/fastconv_*
+tools/fastconvr_*
+tools/fft_*
+*.swp
+*~
+
 # Compiled Object files
 *.slo
 *.lo
