@@ -5,7 +5,7 @@ Set(KissFFT_Source kiss_fft.c
 
 Get_Filename_Component(ParentDirectory ${CMAKE_CURRENT_SOURCE_DIR} DIRECTORY)
 
-Include_Directories(${ParentDirectory} ${CMAKE_CURRENT_SOURCE_DIR})
-
 Add_Library(KissFFT ${KissFFT_Source})
-Target_Compile_Definitions(KissFFT PUBLIC "_CRT_SECURE_NO_WARNINGS")
+Target_Compile_Definitions(KissFFT PRIVATE _CRT_SECURE_NO_WARNINGS)
+
+Target_Include_Directories(KissFFT PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
