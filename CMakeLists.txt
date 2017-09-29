@@ -1,7 +1,9 @@
 Set(KissFFT_Source kiss_fft.c
                    _kiss_fft_guts.h
                    kiss_fft.h
-                   kissfft.hh)
+                   kissfft.hh
+                   kiss_fftnd.c
+                   kiss_fftnd.h)
 
 Get_Filename_Component(ParentDirectory ${CMAKE_CURRENT_SOURCE_DIR} DIRECTORY)
 
